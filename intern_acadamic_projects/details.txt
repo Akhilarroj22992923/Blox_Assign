@@ -1,0 +1,31 @@
+
+Question 1: Elaborate on Your Internship or Academic Projects
+a. What did the system do?
+
+During my internship at Cisco, I worked on developing the "APIM-DEV-PORTAL" project for the Contact Centre product. This platform allows customers to explore APIs that are essential for their Contact Centre solutions, enabling them to enhance customer support through various APIs. My contributions focused on two key features: "Expiry Status Indication" and "Sandbox Provisioning Status". These features, implemented using "React.js", provided real-time updates and visualizations to notify users of expiration statuses or the readiness of sandboxes.
+Additionally, I contributed to backend development and integration tasks. These included supporting trial setups with "Axon sandboxes" and handling customer support issues via "Zendesk". To streamline deployments, I enhanced CI/CD pipelines using "Jenkins", implemented "API logging" with Flask, and conducted API testing via "Postman". Finally, I was responsible for validating call flows within Cisco’s Webex Contact Center (WXCC) and addressing security issues with Docker containers.
+
+b. What other systems have you seen in the wild like that?
+
+In the industry, other systems similar to the Cisco APIM-DEV-PORTAL include platforms like "Google Cloud's API Console" and "AWS API Gateway". These platforms enable users to manage, monitor, and test APIs, often providing sandbox environments for testing without impacting production environments. My exposure to these platforms helped me understand best practices for user interfaces and the importance of seamless sandbox environments for testing and debugging.
+
+c. How did you approach the development problem?
+
+1. Understanding Requirements: I began by thoroughly understanding the project requirements, which involved connecting with product managers and architects to gather insights on what features were most valuable to end-users.
+2. Feature Planning and Design: For each feature, I focused on breaking down tasks, estimating timelines, and drafting basic wireframes for UI features. For instance, I ensured that the Expiry Status Indication provided clear, color-coded updates, allowing users to immediately recognize the urgency.
+3. Implementation: I developed components using "React.js" for front-end functionality and "Flask" for the back-end logging framework. With the "sandbox environments", I carefully managed configurations and validated API endpoints.
+4. Testing and Deployment: Automated testing played a large role in my development process. I used "Selenium" for UI testing, as well as "Cypress and Jest" for unit and integration tests, ensuring functionality and performance stability before deploying features via Jenkins pipelines.
+
+d. What were interesting aspects where you copied code from Stack Overflow?
+
+1. Running APIM DEV Portal Production: When setting up the APIM-DEV-PORTAL production environment, I encountered issues with module compatibility, npm errors, and version mismatches. I relied on Stack Overflow snippets to resolve common npm installation problems, especially solutions for handling version conflicts and dependency mismatches efficiently.
+2. Timezone Adjustment in "Sandbox Provisioning Status": For the Sandbox Provisioning Status feature, I needed to display time information in the user’s local timezone. I found a solution on Stack Overflow that involved using JavaScript’s `Intl.DateTimeFormat` API to format dates according to the user’s time zone. This approach saved me time, providing a tested and localized display format.
+3. Async Error Handling in Flask: I frequently used Stack Overflow for "async error handling" in Flask. A specific snippet for handling asynchronous calls within Flask helped me streamline error handling, especially for network timeouts or unexpected responses from third-party services. It helped improve the reliability of our backend.
+4. Complex Page Interactions in Selenium: When automating tests with Selenium, I had to handle dynamic page elements like pop-up modals and asynchronous data loading. Stack Overflow provided valuable code snippets for handling these interactions gracefully, saving time by providing tried-and-tested logic for complex Selenium interactions.
+
+e. What did you learn from some very specific copy-paste? Mention explicitly some of them.
+
+Using Stack Overflow as a learning resource exposed me to a range of coding best practices and efficient error-handling mechanisms.
+1. Dependency Management in Node.js: By researching and adopting Stack Overflow solutions for npm dependency errors, I learned the importance of version control and conflict resolution. Managing dependencies effectively was crucial in maintaining compatibility across various modules, and I gained insight into how other developers handle complex dependency trees.
+2. Handling Asynchronous Calls in Flask: Implementing Stack Overflow’s async error-handling example helped me understand Flask’s limitations and capabilities with async functions. This approach improved the system’s robustness, allowing the application to handle exceptions cleanly without crashing or causing unexpected behavior.
+3. Timezone Adjustments: The Stack Overflow solution on date formatting using `Intl.DateTimeFormat` expanded my understanding of JavaScript’s built-in date functions and localization. This knowledge has been invaluable for projects requiring regional customization, improving user experience by making data presentation more intuitive.

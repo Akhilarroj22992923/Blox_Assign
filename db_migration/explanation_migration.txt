@@ -1,0 +1,11 @@
+To verify data consistency when migrating from a local database to AWS or GCP, the following check points are recommended:
+
+1]Row Count Verification: Compare the row count of each table in both the local and cloud databases. A mismatch indicates incomplete data migration.
+
+2]Data Hashing: Generate hashes (e.g., SHA-256) for rows or specific columns and compare them across both databases. This helps identify individual record discrepancies.
+
+3]Sample Data Validation: Select a subset of critical records and manually validate them between both databases to ensure data integrity.
+
+4]Checksum Comparison: Many database systems allow checksum generation for tables. This can be computed and compared to check for potential mismatches post-migration.
+
+5]Automated Scripts: Implement automated scripts to compare values in List<Map<String,String>> format for specific columns and flag any discrepancies. This ensures comprehensive data verification.
